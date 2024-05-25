@@ -1,0 +1,16 @@
+
+@if(isTrue) {
+  <h1>
+    Hello
+  </h1>
+} @else {
+  <h1>
+    Hi
+  </h1>
+}
+
+@for(user of users; track user){
+  <p>{{user}}</p>
+}
+<button type="button" (click)="isTrue = !isTrue">change</button>
+<router-outlet />
